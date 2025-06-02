@@ -13,8 +13,8 @@ print(df.head())  # Check first few rows
 df = df.dropna()  # Simple approach to remove missing values
 
 # Select features (X) and target (y)
-X = df[['area']]  # Replace 'Size' with actual feature column name
-y = df['price']  # Replace 'Price' with actual target column name
+X = df[['area']]  
+y = df['price']  
 
 # Split into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
